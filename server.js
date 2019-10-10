@@ -18,3 +18,8 @@ app.use(express.json());
 
 // Set Handlebars.
 var exphbs = require("express-handlebars");
+
+//empowering handlebars as default template engine
+app.engin("handlebars", exphbs({ defaultLayout: "main" }));
+app.set("view engine", "handlebars");
+
