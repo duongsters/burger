@@ -1,6 +1,6 @@
 // -----Set up MySQL connection-----
 var mysql = require('mysql');
-
+var connection;
 //connection to burger_db database of sql workbench
 if (process.env.JAWSDB_URL){
     connection = mysql.createConnection(process.env.JAWSDB_URL)
