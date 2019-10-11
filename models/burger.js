@@ -20,11 +20,16 @@ var burger = {
 
     //updates the 'burgers' table and gets back of the updated records of the burgers table
     updateOne: function(objColVals, condition, cb) {
+        orm.insertOne("burgers", objColVals, condition, function(res) {
+            cb(res);
+        });
     },
 
     //delets the burgers from the 'burgers' table and gets back of the updated records of the burgers table
     delete: function(condition, cb) {
-        
+        orm.delete("burgers", condition, function(res) {
+            cb(res);
+        });
     }
 
 };
