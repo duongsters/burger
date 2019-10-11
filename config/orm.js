@@ -88,12 +88,12 @@ var orm = {
 
 
     // 'updateOne' callback function runs by deleting a burger from the 'burgers' table
-    delete: function(table, condition, cb) {
+    delete: function (table, condition, cb) {
         var queryString = "DELETE FROM " + table;
         queryString += " WHERE ";
         queryString += condition;
 
-        connection.query(queryString, function(err, result){
+        connection.query(queryString, function (err, result) {
             if (err) {
                 throw err;
             }
@@ -101,3 +101,6 @@ var orm = {
         });
     }
 };
+
+// Export the orm object for the model (burgers.js).
+module.exports = orm;
