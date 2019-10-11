@@ -48,6 +48,17 @@ router.put("/api/burgers/:id", function(req, res){
     });
 });
 
+//.delete express call method in deleting a burger from the db
+routers.delete("/api/burgers/:id", function(req,res){
+    burger.delete(condition, function(result){
+        if(result.affectedRows == 0){
+            return res.status(404).end();
+        }
+        else{
+            res.status(200).end();
+        }
+    });
+});
 
 
 
