@@ -23,7 +23,7 @@ function objToSql(ob) {
             if (typeof value === "string" && value.indexOf(" ") >= 0) {
                 value = "'" + value + "'";
             }
-            arr.push(key + "'" + value);
+            arr.push(key + "=" + value);
         }
     }
     // returns array of strings to a single comma-separated string
