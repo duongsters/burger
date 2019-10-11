@@ -1,3 +1,51 @@
+/* ---Handlebar files styling--- */
+button {
+    font-size: 14px;
+    color: #5af0da;
+    background-color: grey;
+    border-radius: 20px;
+    padding: 5px;
+}
+
+h1 {
+    font-size: 45px;
+}
+
+h2 {
+    font-size: 40px;
+}
+
+ul {
+    text-align: center;
+    font-size: 25px;
+}
+li {    
+    list-style-type: none;
+    padding: 5px;
+    margin: 5px;
+    font-family: cursive;
+    background-color:rgba(255,255,0,0.3); 
+  }
+  
+  .label {
+    font-weight: bold;
+  }
+  
+  .create-form {
+    padding: 5px;
+    margin: 5px;
+    background-color:rgba(255,0,0,0.3);
+  }
+  
+  .form-group {
+    margin-bottom: 5px;
+    font-size: 25px;
+
+  }
+
+
+  /* ---Burger Background--- */
+
 body {
     margin: 0;
     padding: 0;
