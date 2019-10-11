@@ -28,7 +28,7 @@
 <ul>
     {{#each burgers}}
     {{#unless devoured}}
-    {{!-- a 'true' boolean value would mean it would have been eaten --}}
+    {{!-- a 'true' boolean value would mean it would have been eaten for each burgers --}}
     {{> burgers/burger-block devoured=true}}
     {{/unless}}
     {{/each}}
@@ -39,7 +39,7 @@
     {{#each burgers}}
     {{#if devoured}}
 
-    {{!-- a 'false' boolean value would mean it would have been eaten --}}
+    {{!-- a 'false' boolean value would mean it would have been eaten for each burger --}}
     {{> burgers/burger-block devoured=false}}
     {{/if}}
     {{/each}}
