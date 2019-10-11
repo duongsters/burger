@@ -31,30 +31,30 @@ router.post("/api/burgers", function (req, res) {
 });
 
 //.put express call method in updating the burger db
-router.put("/api/burgers/:id", function(req, res){
+router.put("/api/burgers/:id", function (req, res) {
     var condition = "id = " + req.params.id;
     console.log("condition", condition);
 
     burger.updateOne({
         devoured: req.body.devoured
     },
-    condition, function(result){
-        if(result.changedRows ==0) {
-            return res.status(404).end();
-        }
-        else{
-            res.status(200).end();
-        }
-    });
+        condition, function (result) {
+            if (result.changedRows == 0) {
+                return res.status(404).end();
+            }
+            else {
+                res.status(200).end();
+            }
+        });
 });
 
 //.delete express call method in deleting a burger from the db
-routers.delete("/api/burgers/:id", function(req,res){
-    burger.delete(condition, function(result){
-        if(result.affectedRows == 0){
+routers.delete("/api/burgers/:id", function (req, res) {
+    burger.delete(condition, function (result) {
+        if (result.affectedRows == 0) {
             return res.status(404).end();
         }
-        else{
+        else {
             res.status(200).end();
         }
     });
