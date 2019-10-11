@@ -34,3 +34,6 @@ var burger = {
 
 };
 
+
+// exports the database functions result values for the controller file burgers_controller.js
+module.exports = burger;
