@@ -1,0 +1,25 @@
+<h1 style="text-align: :center">Burger-Mania</h1>
+
+{{!-- where the user inputs a new burger --}}
+<h2 style="text-align: center;">Add Burger of your choice to the list below</h2>
+<form class="create-form" style="text-align: center;">
+    <div class="form-group">
+        <label for="bu"></label>
+        <input type="text" id="bu" name="name">
+    </div>
+
+    <div class="form-group">
+        {{!-- <label for="devoured">Eaten?</label><br> --}}
+        <input type="radio" name="devoured" value="0" checked> Devoured Burgers!
+        <br>
+        <input type="radio" name="devoured" value="1">Un-devoured Burgers!>
+    </div>
+    <button class="button" type="submit">Add a burger</button>
+</form>
+
+<h2 style="text-align:center;">Devoured Burgers:</h2>
+
+<ul>
+    {{#each burgers}}
+    
+</ul>
