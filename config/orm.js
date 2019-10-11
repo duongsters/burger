@@ -65,5 +65,29 @@ var orm = {
         });
 
     },
-    
+
+        // 'updateOne' callback function runs by updating a burger from the devoured and un-devoured lists from the 'burgers' table 
+        //by changing the values of coloumn values and boolean values of 'devoured'
+        updateOne: function (table, objColVals, condition, cb) {
+            var queryString = "UPDATE " + table;
+
+            queryString += " SET ";
+            queryString += objToSql(objColVals);
+            queryString += " WHERE ";
+            queryString += condition;
+
+            console.log(queryString);
+            connection.query(queryString, function(err, result) {
+                if (err) {
+                    throw err;
+                }
+                cb(result);
+            });
+
+        },
+
+
+        
+
+
 }
