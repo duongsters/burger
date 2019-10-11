@@ -1,10 +1,12 @@
 // -----Set up MySQL connection-----
 var mysql = require('mysql');
 var connection;
-//connection to burger_db database of sql workbench
+//connection to burger_db database to heroku
 if (process.env.JAWSDB_URL){
     connection = mysql.createConnection(process.env.JAWSDB_URL)
 }
+
+//else, connect to the mysql localhost:8080
 else{
     connection = mysql.createConnection({
         host: "localhost",
