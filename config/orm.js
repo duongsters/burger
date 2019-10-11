@@ -35,7 +35,7 @@ function objToSql(ob) {
 var orm = {
     // callback function 'selectAll' runs by takes in all values from tableInput from burgers_db database and selects all values 'burgers' table
     selectAll: function (tableInput, cb) {
-        var queryString = "SELECT FROM " + tableInput + ";";
+        var queryString = "SELECT * FROM " + tableInput + ";";
         connection.query(queryString, function (err, result) {
             if (err) {
                 throw err;
