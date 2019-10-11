@@ -18,9 +18,9 @@ var burger = {
         });
     },
 
-    //updates the 'burgers' table and gets back of the updated records of the burgers table
+    //updates the 'burgers' devoured boolean value and gets back of the updated records of the burgers table
     updateOne: function (objColVals, condition, cb) {
-        orm.insertOne("burgers", objColVals, condition, function (res) {
+        orm.updateOne("burgers", objColVals, condition, function (res) {
             cb(res);
         });
     },

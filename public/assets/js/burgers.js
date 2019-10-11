@@ -1,5 +1,5 @@
 // Make sure we wait to attach our handlers until the DOM is fully loaded.
-$(function () {
+$(function(){
 
     // onclick call reading on the 'devour' & 'un-devour' button on adding a burger to the list
     $(".change-devoured").on("click", function (event) {
