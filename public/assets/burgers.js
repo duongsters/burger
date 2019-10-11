@@ -1,5 +1,7 @@
 // Make sure we wait to attach our handlers until the DOM is fully loaded.
 $(function () {
+
+    // onclick call reading on the 'devour' & 'un-devour' button on adding a burger to the list
     $(".change-devoured").on("click", function (event) {
         var id = $(this).data("id");
         var newDevoured = $(this).data("newdevoured");
@@ -21,7 +23,7 @@ $(function () {
     });
 
     // onclick call reading on the submit button on adding a burger to the list
-    $(".create-form").on("submit", function(event){
+    $(".create-form").on("submit", function (event) {
         event.preventDefault();
 
         var newBurger = {
@@ -33,12 +35,27 @@ $(function () {
             type: "POST",
             data: newBurger
         })
-        .then(
-            function() {
-                console.log("created new burger");
-                location.reload();
-            }
-        );
+            .then(
+                function () {
+                    console.log("created new burger");
+                    location.reload();
+                }
+            );
+    });
+
+    // onclick call reading on the delete button on adding a burger to the list
+    $(".delete-burger").on("click", function (event) {
+        var id = $(this).data("id");
+
+        $.ajax("/api/burgers/" + id, {
+            type: "DELETE"
+        })
+            .then(
+                function () {
+                    console.log("deleted burger", id);
+                    location.reload();
+                }
+            );
     });
 
 });
