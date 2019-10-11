@@ -38,7 +38,7 @@ var orm = {
         var queryString = "SELECT FROM " + tableInput + ";";
         connection.query(queryString, function (err, result) {
             if (err) {
-                throw errl
+                throw err;
             }
             cb(result);
         });
