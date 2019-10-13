@@ -7,10 +7,12 @@ Burger-Mania, a burger-themed application that renders the situational case wher
 
 Simply put, Burger-Mania will allow users to (in no specific order):
 
-1) Submit a personal burger to the app
-2) Eat a burger within the app
+
+1) Submit a personal burger to the app![Screenshot1](./public/assets/img/Screenshot1.png)
+2) Eat a burger within the app![Screenshot1](./public/assets/img/Screenshot2.png)
 3) Re-order a previously deleted burger
-4) Delete a burger from the list provided 
+4) Delete a burger from the list provided![Screenshot1](./public/assets/img/Screenshot3.png)
+ 
 
 
 ## Getting Started:
