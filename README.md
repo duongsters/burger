@@ -14,7 +14,7 @@ Simply put, Burger-Mania will allow users to (in no specific order):
 
 
 ## Getting Started:
-The simpliest way in seeing a demo of Burger Mania is to click on the Heroku link that leads it directly to the project without any installations required. This link can be found within this readme file or at the description area within http://github.com/duongsters/burger
+The simpliest way in seeing a demo of Burger Mania is to click on the Heroku link (https://hidden-mountain-42182.herokuapp.com/) that leads it directly to the project without any installations required. This link can be found within this readme file or at the description area within http://github.com/duongsters/burger
 
 To connect locally...
 1) Clone burger repository via https://github.com/duongsters/burger
