@@ -27,8 +27,9 @@ To connect locally...
 
 ## Technologies Used:
 - NPM: I used specifically the Express-Handlebars, mySQL, Express throughout the entire assigment.
+- ORM: Object Relational Mapping is used in trying to interact with our database, burgers_db using our language of choice instead of SQL.
 - Node.JS: Basically the engine that runs the NPM packages used as stated above.
-- Javascript: Basically used within the main files to render the entire application
+- Javascript: Basically used within the main files to render the entire application.
 
 
 ## Code Snippet(s)
